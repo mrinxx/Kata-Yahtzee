@@ -1,0 +1,8 @@
+06-05-2020:
+--Eliminación de bucles y condicionales en las funciones ones,twos,threes usando métodos de listas (count())
+--Correccion del error producido con @staticmethod y self 
+    --Introducción de estas funciones dentro de la clase
+--Renombrado de variables
+--Cambio de posición del init y agrupación de la inicialización en una sola linea
+--Compresión de condicionales extensos en una sola línea utilizando métodos de listas (count())
+--Corrección del error de la funcion two_pairs (==2 --> >= 2)
