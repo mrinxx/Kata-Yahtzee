@@ -28,38 +28,31 @@ class Yahtzee:
                 return 50
         return 0
     
-    @staticmethod
-    def ones( d1,  d2,  d3,  d4,  d5): #cambio 06-05
+    @staticmethod #cambio 08-05
+    def countN(lst,toCount):
+        return lst.count(toCount).toCount
+    
+    def ones(self,d1,  d2,  d3,  d4,  d5): 
         """Se eliminan bucles y condicionales utilizando métodos de listas
             en varias funciones""" 
+        return self.countN([d1,  d2,  d3,  d4,  d5],1)  
 
-        sum=[d1,  d2,  d3,  d4,  d5].count(1)
-        return sum
-
-    @staticmethod
-    def twos( d1,  d2,  d3,  d4,  d5):
-        sum=[d1,  d2,  d3,  d4,  d5].count(2)*2
-
-        return sum
+    def twos(self,d1,  d2,  d3,  d4,  d5):
+        return self.countN([d1,  d2,  d3,  d4,  d5],2)  
         
     @staticmethod
-    def threes( d1,  d2,  d3,  d4,  d5):
-        sum=[d1,  d2,  d3,  d4,  d5].count(3)*3
-        
-        return sum
+    def threes(self,d1,  d2,  d3,  d4,  d5):
+        return self.countN([d1,  d2,  d3,  d4,  d5],3)  
 
     def fours(self):
         """Al igual que en las funciones fives y sixes, se ha simplificado el bucle for"""
-        sum=self.dice.count(4)*4
-        return sum
+        return self.countN(self.dice,4)  
 
     def fives(self):
-        s=self.dice.count(5)*5
-        return s
+        return self.countN(self.dice,5)  
     
     def sixes(self):
-        sum = self.dice.count(6)*6
-        return sum
+        return self.countN(self.dice,6)  
 
     @staticmethod
     def score_pair(d1,  d2,  d3,  d4,  d5):

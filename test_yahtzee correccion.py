@@ -1,4 +1,4 @@
-from yahtzee_refactorizado_correccion import Yahtzee
+from yahtzee_refactorizado import Yahtzee
 
 # These unit tests can be run using the py.test framework
 # available from http://pytest.org/

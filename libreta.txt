@@ -6,3 +6,8 @@
 --Cambio de posición del init y agrupación de la inicialización en una sola linea
 --Compresión de condicionales extensos en una sola línea utilizando métodos de listas (count())
 --Corrección del error de la funcion two_pairs (==2 --> >= 2)
+
+
+08-05-2020:
+--Se ha extraído una función que realice la cuenta de las funciones ones, twos, threes, fours , fives y sixes
+    --Eliminación de @staticmethod de estas funciones ya que comienzan a necesitar self
